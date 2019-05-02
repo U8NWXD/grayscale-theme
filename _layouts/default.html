@@ -4,9 +4,9 @@
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     {% include nav.html %}
     {% include header.html %}
-    {% include about.html %}
-    {% include download.html %}
-    {% include contact.html %}
+    {% include about.html src='about.md' %}
+    {% include download.html src='download.md' btn_lnk='http://example.com' btn_txt = 'Go to Site'%}
+    {% include contact.html src='contact.md' %}
     {% include map.html %}
     {% include footer.html %}
     {% include js.html %}
