@@ -3,11 +3,15 @@
     <div class="download-section">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
-                {% capture markdown %}
-                {% include {{ include.src }} %}
-                {% endcapture %}
+                {% if include.src %}
+                    {% capture markdown %}
+                    {% include {{ include.src }} %}
+                    {% endcapture %}
 
-                {{ markdown | markdownify }}
+                    {{ markdown | markdownify }}
+                {% elsif include.h1 %}
+                    <h1>{{ include.h1 }}</h1>
+                {% endif %}
             </div>
         </div>
     </div>
