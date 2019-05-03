@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        {% include nav.html %}
+
+        {% capture pagetitle %}
+        {{ page.title }}
+        {% endcapture %}
+        {% include txt_on_img.html h1=pagetitle %}
+        <section id="text" class="container content-section text-left">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    {{ content }}
+                </div>
+            </div>
+        </section>
+        {% include footer.html %}
+        {% include js.html %}
+    </body>
+</html>

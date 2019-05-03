@@ -25,6 +25,13 @@ social:
   - title: github
     url: https://github.com/IronSummitMedia/startbootstrap
 
+# Links to show in nav header
+navlinks:
+  - text: Home
+    url: /
+  - text: Test
+    url: /test
+
 # Build settings
 markdown: kramdown
 permalink: pretty
