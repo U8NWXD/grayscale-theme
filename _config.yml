@@ -29,8 +29,10 @@ social:
 navlinks:
   - text: Home
     url: /
-  - text: Test
-    url: /test
+  - text: Page One
+    url: /page1
+  - text: Page Two
+    url: /page2
 
 # Build settings
 markdown: kramdown
